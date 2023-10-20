@@ -37,7 +37,7 @@ li {
     grid-template-rows: 2rem 1fr;
     /* For flex version only */
     /* width: 30vw; */
-    height: 100vh;
+    height: max(100vh, 100%);
     background-color: aqua;
 }
 
