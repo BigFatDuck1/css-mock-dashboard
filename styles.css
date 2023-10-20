@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
 }
 
 
@@ -26,6 +30,7 @@ li {
     /* Make the logo bigger */
     grid-template-rows: 2rem 1fr;
     width: 30vw;
+    height: 100vh;
     background-color: aqua;
 }
 
@@ -47,12 +52,17 @@ li {
     gap: 20px;
 }
 
-/* Main section grid */
+/* Main section */
 .main_panel {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 10px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 h3 {
