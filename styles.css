@@ -2,7 +2,12 @@
 .main_container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.right_side {
+    min-width: 80vw;
+
 }
 
 /* Sidebar */
@@ -15,6 +20,8 @@ li {
     display: grid;
     /* Make the logo bigger */
     grid-template-rows: 2rem 1fr;
+    width: 20vw;
+    background-color: aqua;
 }
 
 .sidebar>ul {
@@ -22,3 +29,15 @@ li {
     gap: 10px;
 }
 
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_identity {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
