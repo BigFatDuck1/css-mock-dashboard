@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 .main_container {
     display: flex;
@@ -6,7 +11,7 @@
 }
 
 .right_side {
-    min-width: 80vw;
+    min-width: 70vw;
 
 }
 
@@ -20,7 +25,7 @@ li {
     display: grid;
     /* Make the logo bigger */
     grid-template-rows: 2rem 1fr;
-    width: 20vw;
+    width: 30vw;
     background-color: aqua;
 }
 
@@ -40,4 +45,38 @@ li {
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+/* Main section grid */
+.main_panel {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+}
+
+h3 {
+    /* TODO: Change styling of announcement headings */
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Content grid */
+.content_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    text-align: center;
+    font-size: 1rem;
+    border: solid 1px black;
+}
+
+/* Main section right */
+.main_section_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
