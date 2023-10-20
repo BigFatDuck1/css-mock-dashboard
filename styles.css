@@ -7,10 +7,6 @@
     font-size: 14px;
 }
 
-body {
-    overflow: hidden;
-}
-
 /* Flexbox version */
 /* .main_container {
     display: flex;
@@ -83,6 +79,7 @@ h3 {
 }
 
 /* Content grid */
+
 .content_grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
