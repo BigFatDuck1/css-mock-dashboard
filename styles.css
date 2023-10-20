@@ -7,8 +7,12 @@
     font-size: 14px;
 }
 
+body {
+    overflow: hidden;
+}
 
-.main_container {
+/* Flexbox version */
+/* .main_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,6 +21,12 @@
 .right_side {
     min-width: 70vw;
 
+} */
+
+/* Grid version */
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
 }
 
 /* Sidebar */
@@ -29,7 +39,8 @@ li {
     display: grid;
     /* Make the logo bigger */
     grid-template-rows: 2rem 1fr;
-    width: 30vw;
+    /* For flex version only */
+    /* width: 30vw; */
     height: 100vh;
     background-color: aqua;
 }
