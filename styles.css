@@ -8,6 +8,7 @@
 
 :root {
     --propic-bg-color: rgb(49, 245, 49);
+    --card-outline: #ccc;
 }
 
 /* Flexbox version of main container */
@@ -244,14 +245,24 @@ h3 {
 
 .content_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
 }
 
 .card {
-    text-align: center;
+    padding: 20px 10px 20px 10px;
+    text-align: left;
     font-size: 1rem;
-    border: solid 1px black;
+    border: solid 1px var(--card-outline);
+    border-radius: 10px;
+    border-left: 5px solid green;
+}
+
+h4 {
+    /* TODO: Change styling of card headings */
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    font-weight: 500;
 }
 
 /* Main section right */
@@ -302,16 +313,16 @@ img[id^="user"] {
 }
 
 /* Card */
-.card {
+.section_card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid #ccc;
+    border: 1px solid var(--card-outline);
     border-radius: 16px;
     margin-right: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10vh;
 }
 
-.marginL-5 {
+.marginL {
     margin-left: 10px;
 }
