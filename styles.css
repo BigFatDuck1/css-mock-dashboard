@@ -38,6 +38,7 @@ li {
     /* For flex version only */
     /* width: 30vw; */
     height: max(100vh, 100%);
+    /* TODO: change this color later */
     background-color: aqua;
 }
 
@@ -61,12 +62,46 @@ li {
     justify-content: space-between;
     margin-top: 10px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .header_identity {
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+/* Subheader */
+.subheader {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.subheader_pic {
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.greeting>p {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.greeting>.subheader_name {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /* Main section */
