@@ -43,8 +43,15 @@ li {
 
 .sidebar>ul {
     display: grid;
+    margin: 10px;
+    padding-top: 20px;
     gap: 10px;
     max-height: 80vh;
+}
+
+.logo {
+    margin: 5px;
+    margin-top: 10px;
 }
 
 /* Header */
@@ -52,6 +59,8 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .header_identity {
@@ -71,6 +80,8 @@ li {
 .title {
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 10px;
+    padding-left: 0px;
 }
 
 h3 {
@@ -80,6 +91,9 @@ h3 {
 }
 
 /* Content grid */
+.grid_section {
+    margin-left: 10px;
+}
 
 .content_grid {
     display: grid;
