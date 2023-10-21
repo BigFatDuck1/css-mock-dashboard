@@ -44,6 +44,7 @@ li {
 .sidebar>ul {
     display: grid;
     gap: 10px;
+    max-height: 80vh;
 }
 
 /* Header */
@@ -95,6 +96,7 @@ h3 {
 /* Main section right */
 .main_section_right {
     display: flex;
+    max-height: 80vh;
     flex-direction: column;
     justify-content: space-between;
 }
