@@ -264,14 +264,54 @@ h3 {
 
 /* Announcements */
 .announcements_ul>li {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    text-align: left;
     padding-bottom: 10px;
+    padding-right: 5px;
     border-bottom: 1px solid rgb(181, 181, 181);
     margin-bottom: 10px;
 }
 
 .trending_ul>li {
     padding-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 0px;
     margin-bottom: 10px;
 }
 
+img[id^="user"] {
+    margin-right: 5px;
+    width: 1.5rem;
+}
+#user1 {
+    background-color: cyan;
+    border-radius: 10px;
+}
+#user2 {
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+#user3 {
+    background-color: orange;
+    border-radius: 10px;
+}
+#user4 {
+    background-color: purple;
+    border-radius: 10px;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.marginL-5 {
+    margin-left: 10px;
+}
