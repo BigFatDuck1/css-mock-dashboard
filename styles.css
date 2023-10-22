@@ -9,6 +9,15 @@
 :root {
     --propic-bg-color: rgb(49, 245, 49);
     --card-outline: #ccc;
+    --sidebar-color: rgb(192, 192, 192);
+    --sidebar-list: black;
+    --input-bg: rgb(197, 197, 197);
+    --input-focus: rgba(250, 235, 215, 0.413);
+    --header-links: black;
+    --button-text: black;
+    --button-bg: #1de9b6;
+    --card-edge: green;
+    --announce-separate: rgb(210, 210, 210);
 }
 
 /* Flexbox version of main container */
@@ -63,7 +72,7 @@ li {
     /* width: 30vw; */
     height: max(100vh, 100%);
     /* TODO: change this color later */
-    background-color: rgb(192, 192, 192);
+    background-color: var(--sidebar-color);
 }
 
 .sidebar>ul {
@@ -76,8 +85,7 @@ li {
 
 li>a {
     margin-left: 10px;
-    /* TODO: change color of sidebar items */
-    color: black;
+    color: var(--sidebar-list);
     text-decoration: none;
 }
 
@@ -113,16 +121,15 @@ li>a {
 input {
     border: 0px;
     /* border-bottom: 1px solid #8c8c8c; */
-    background-color: rgb(197, 197, 197);
+    background-color: var(--input-bg);
     border-radius: 6px;
     height: 1.5rem;
     width: 40vw;
 }
 
 input:focus {
-    /* TODO: change focus color */
     /* border-bottom: 1px solid cyan; */
-    background-color: rgba(250, 235, 215, 0.413);
+    background-color: var(--input-focus);
     text-indent: 5px;
     outline: none;
 }
@@ -146,7 +153,7 @@ input:focus {
 .header_name>a,
 .notification>a {
     text-decoration: none;
-    color: black;
+    color: var(--header-links);
 }
 
 /* Subheader */
@@ -204,16 +211,14 @@ button {
     border-radius: 5px;
     padding: 8px 18px;
     border: 0;
-    /* TODO: Change color of buttons */
-    color: #000021;
-    background: #1de9b6;
+    color: var(--button-text);
+    background: var(--button-bg);
     line-height: 1.15;
     font-size: 1rem;
 }
 button:hover {
     transition: all .2s ease;
-    /* TODO: Change color of :hover */
-    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px var(--button-bg);
 }
 
 /* Main section */
@@ -255,7 +260,7 @@ h3 {
     font-size: 1rem;
     border: solid 1px var(--card-outline);
     border-radius: 10px;
-    border-left: 5px solid green;
+    border-left: 5px solid var(--card-edge);
 }
 
 h4 {
@@ -281,7 +286,7 @@ h4 {
     text-align: left;
     padding-bottom: 10px;
     padding-right: 5px;
-    border-bottom: 1px solid rgb(181, 181, 181);
+    border-bottom: 1px solid var(--announce-separate);
     margin-bottom: 10px;
 }
 
