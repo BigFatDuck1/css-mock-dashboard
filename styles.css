@@ -7,17 +7,54 @@
 }
 
 :root {
-    --propic-bg-color: rgb(49, 245, 49);
-    --card-outline: #ccc;
-    --sidebar-color: rgb(192, 192, 192);
-    --sidebar-list: black;
-    --input-bg: rgb(197, 197, 197);
-    --input-focus: rgba(250, 235, 215, 0.413);
-    --header-links: black;
-    --button-text: black;
-    --button-bg: #1de9b6;
-    --card-edge: green;
+    --text-color: #bfbfbf;
+    --base-bg: #1f1f1f;
+    --header-color: #121212;
+    --propic-bg-color: #f3eb0b;
+    --card-outline: #0F0F0F;
+    --card-background: #0F0F0F;
+    --sidebar-color: #111111;
+    --sidebar-list: #bfbfbf;
+    --input-bg: #3D3C3C;
+    --input-focus: #faebd769;
+    --header-links: var(--text-color);
+    --button-text: var(--text-color);
+    --button-bg: #05567b;
+    --card-edge: #05567b;
     --announce-separate: rgb(210, 210, 210);
+    --title: #FFFFFF;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--base-bg);
+}
+
+/* Colors */
+.header, .subheader {
+    background-color: var(--header-color);
+}
+
+.sidebar_icons {
+    filter: invert(100%);
+}
+
+.logo_icon {
+    filter: invert(100%) drop-shadow(3px 3px 1px yellow);
+}
+
+.logo_text,
+.subheader_name {
+    color: #FFFFFF;
+}
+
+.card,
+.section_card {
+    background-color: var(--card-background);
+}
+
+.title {
+    color: var(--title);
 }
 
 /* Flexbox version of main container */
@@ -99,9 +136,9 @@ li>a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .header_identity {
@@ -161,8 +198,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     justify-content: space-between;
 }
 
@@ -223,10 +261,11 @@ button:hover {
 
 /* Main section */
 .main_panel {
-    margin-top: 20px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 10px;
+    border-radius: 5px;
 }
 
 .title {
